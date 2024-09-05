@@ -77,9 +77,6 @@ build/
 .idea/**/gradle.xml
 .idea/**/libraries
 
-src/main/resources/application.properties
-src/main/java/com/victorguerra/projects/CreateAdmin.java
-
 HELP.md
 
 # Gradle and Maven with auto-import
