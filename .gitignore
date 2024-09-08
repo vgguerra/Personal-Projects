@@ -201,4 +201,7 @@ buildNumber.properties
 .history
 .ionide
 
+src/main/resources/application.properties
+src/main/java/com/victorguerra/projects/CreateAdmin.java
+
 # End of https://www.toptal.com/developers/gitignore/api/java,intellij+all,visualstudiocode,maven,git
