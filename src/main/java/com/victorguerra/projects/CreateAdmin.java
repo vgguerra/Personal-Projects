@@ -20,7 +20,6 @@ public class CreateAdmin implements CommandLineRunner {
         if(adminService.findAdminByUsername("admin") == null){
             Admin admin = new Admin();
             admin.setUsername("admin");
-            // Usa a senha injetada
             admin.setPassword(adminPassword);
             admin.setRole("ADMIN");
             adminService.saveUser(admin);
