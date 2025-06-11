@@ -3,7 +3,6 @@ package com.victorguerra.projects.services;
 import com.victorguerra.projects.models.Admin;
 import com.victorguerra.projects.repositories.AdminRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
