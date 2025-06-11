@@ -33,6 +33,7 @@ public class ProjectService {
         projectRepository.deleteById(id);
     }
 
+    @Transactional
     public Project updateProject(Long id, Project project) {
         return projectRepository.findById(id).orElse(null);
     }
