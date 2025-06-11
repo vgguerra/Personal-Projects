@@ -13,18 +13,23 @@ public class UserDetailsService implements org.springframework.security.core.use
     @Autowired
     private AdminRepository adminRepository;
 
+    // CÓDIGO CORRIGIDO
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Admin admin = this.adminRepository.findAdminByUsername(username);
 
         if (admin == null) {
-            throw new UsernameNotFoundException("Admin with username \"" + username + "\" not found");
+            throw new UsernameNotFoundException("Admin com o nome de usuário \"" + username + "\" não foi encontrado");
         }
 
         return org.springframework.security.core.userdetails.User
                 .withUsername(admin.getUsername())
                 .password(admin.getPassword())
-                .authorities("ROLE_ADMIN") // Simplificado
+                .authorities("ROLE_ADMIN")
                 .build();
     }
+
+
+
+
 }

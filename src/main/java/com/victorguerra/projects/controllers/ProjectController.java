@@ -14,6 +14,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/project")
 @Validated
+@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
 public class ProjectController {
 
     @Autowired
